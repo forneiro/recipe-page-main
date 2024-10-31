@@ -1,0 +1,142 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+body {
+  font-size: 17.5px;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Stone-100);
+}
+h2 {
+  color: var(--Brown-800);
+}
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+img {
+  max-width: 100%;
+}
+main {
+  max-width: 66rem;
+  background-color: var(--White);
+  margin: 8rem auto;
+  padding: 3rem 3.6rem;
+  border-radius: 2rem;
+}
+p {
+  color: var(--Stone-600);
+  font-size: 14px;
+}
+span {
+  color: var(--Stone-900);
+  font-weight: 600;
+}
+table {
+  width: 100%;
+  font-size: 1.6rem;
+}
+td {
+  padding: 1rem 0;
+}
+td:first-child {
+  padding-left: 2.4rem;
+}
+td:nth-child(2) {
+  padding-right: 2.4rem;
+  color: var(--Brown-800);
+  font-weight: 600;
+}
+
+ul {
+  line-height: 3rem;
+  padding: 0 2.4rem 0;
+}
+ol {
+  line-height: 2.4rem;
+  padding: 0 2.4rem 0;
+}
+li {
+  font-size: 14px;
+  padding-left: 1.2rem;
+}
+/* TOOLS */
+.border-bottom,
+td {
+  border-bottom: 1px solid var(--Stone-150);
+}
+tr:last-child td {
+  border: none;
+}
+/* CARD */
+.principal-image img {
+  border-radius: 1rem;
+}
+.preparation {
+  background-color: var(--Rose-50);
+  padding: 2rem 2rem 0.5rem;
+  border-radius: 1rem;
+}
+.preparation p {
+  color: var(--Rose-800);
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0;
+}
+.preparation li::marker {
+  color: var(--Rose-800);
+}
+.ingredients-list li::marker,
+.Instructions-list li::marker {
+  color: var(--Brown-800);
+  font-weight: bold;
+}
+.Instructions-list li {
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    line-height: 3.6rem;
+    font-size: 3.2rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  main {
+    padding: 0 0 3rem;
+    margin: 0;
+  }
+  section {
+    max-width: 79%;
+    margin: 0 auto;
+  }
+  li {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  li:last-child {
+    margin: 0;
+  }
+}
